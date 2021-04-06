@@ -19,7 +19,7 @@ class Cromosoma():
         #Omplim y
         self.y = [self.p1[1]]
         for i in range(num_punts - 2):
-            self.y.append(np.random.uniform(-1, 0))
+            self.y.append(np.random.uniform(-1, -self.x[i]/p2[0]))
         self.y.append(self.p2[1])
 
         self.calcula_temps()
